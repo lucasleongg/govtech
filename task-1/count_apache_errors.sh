@@ -16,6 +16,8 @@ then
   #Format summary count of errors
   TOTAL_ERRORS="Total Errors: ${ERROR_COUNT}"
   ERROR_SUMMARY=`echo "$ERROR_OUTPUT" | awk '{print $9}' | sort | uniq -c | awk '{print "error "$2":"$1 }'`
+  
+  echo "$ERROR_SUMMARY"
 
   EMAIL_BODY="${TOTAL_ERRORS}"$'\n'"${ERROR_SUMMARY}"$'\n'"${ERROR_OUTPUT}"
   #Send email
