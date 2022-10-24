@@ -13,7 +13,7 @@ OS: Ubuntu 22.04 on AWS EC2
     - Run script:
       - To run the script:./count_apache_errors.sh apache_logs
       - You can modify the variable HOURS_BEFORE to specify how long ago should the logs be from
-      - Modify EMAIL_ADDRESS to destination email address
+      - Modify EMAIL_ADDRESS to destination email address (Ensure that mailutils is installed)
       - To run it periodically, configure a cronjob with schedule (E.g. 0 * * * * for every hour) 
 
   - B:
