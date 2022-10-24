@@ -5,9 +5,9 @@ OS: Ubuntu 22.04 on AWS EC2
     - Overview:
       - The script will first filter logs from the past X hours. 
       - From these, it will count the number of 4xx and 5xx responses using regex. 
-      - If the error count is more than 100, it will generate a summary of the total number of errors, and count for each error. 
-      Total Errors: 103
-      error 400: 50
+      - If the error count is more than 100, it will generate a summary of the total number of errors, and count for each error.\
+      Total Errors: 103\
+      error 400: 50\
       error 404: 53
       - It will then send an email containing the error summary and list of errors to the email specified.
     - Run script:
@@ -49,7 +49,7 @@ OS: Ubuntu 22.04 on AWS EC2
         - Port is configured using environmental variables in the beginning (3000 for staging, 3001 for release)
       - Email:
         - A POST step is configured such that failure in any stage will send an email to the address specified in the environment variable
-        - Example body: 
-          Failure: Job govtech/staging build 53
+        - Example body: \
+          Failure: Job govtech/staging build 53\
  More info at: http://54.179.154.58:8080/job/govtech/job/staging/53/
     
