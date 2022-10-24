@@ -27,6 +27,7 @@ OS: Ubuntu 22.04 on AWS EC2
     - Jenkins Credentials: admin:admin
     - Staging URL: http://54.179.154.58:3000/
     - Release URL: http://54.179.154.58:3001/
+    - Forked Repository: https://github.com/lucasleongg/one2onetool
   - Overview:
     - Jenkins is used as the CI/CD tool for this task. 
     - Multibranch pipeline is created for one2onetool, consisting of staging and release branches
